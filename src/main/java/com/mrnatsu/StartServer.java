@@ -32,8 +32,6 @@ public class StartServer {
 
         globalEventHandler.addListener(PlayerBlockBreakEvent.class,event ->{
             final Player player = event.getPlayer();
-            player.setGameMode(GameMode.CREATIVE);
-            player.getInventory().addItemStack(ItemStack.of(event.getResultBlock().));
         });
         // Start the server on port 25565
         minecraftServer.start("0.0.0.0", 25565);

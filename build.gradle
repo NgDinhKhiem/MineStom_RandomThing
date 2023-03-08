@@ -1,0 +1,15 @@
+plugins {
+    id 'java'
+}
+
+group 'com.mrnatsu'
+version '1.0'
+
+repositories {
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    implementation 'com.github.Minestom.Minestom:Minestom:a9e319f961'
+}
